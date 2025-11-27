@@ -5,6 +5,8 @@
 **What it does:**
 Reads a locale file (e.g., `locales/ru.json`) and updates `openspec/AGENTS.md` with the translated content.
 
+> **Note:** To generate OpenSpec documents in the selected language, you should also write your prompts to the AI agent in that language. For example, after switching to Russian, issue commands to the AI in Russian.
+
 **Usage:**
 
 Run directly with `npx`:

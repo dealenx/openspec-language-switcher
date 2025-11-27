@@ -1,6 +1,6 @@
 # Documentation Spec
 
-## MODIFIED Requirements
+## ADDED Requirements
 
 ### Requirement: README Clarity and Conciseness
 The `README.md` MUST be rewritten to be elegant, short, and easy to understand.
