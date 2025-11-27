@@ -1,0 +1,7 @@
+{
+  "descriptionSuffix": " Provide the answer strictly in Chinese language. Even if the query is in English, the output must be Chinese.",
+  "checklistItems": [
+    "When creating files, use Chinese",
+    "Ensure all files and tasks are in Chinese"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "name": "@dealenx/openspec-language-switcher",
+  "version": "0.0.1-0",
+  "description": "CLI utility to localize OpenSpec AGENTS.md",
+  "main": "bin/index.js",
+  "bin": {
+    "openspec-language-switcher": "./bin/index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "openspec",
+    "cli",
+    "localization"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^11.0.0"
+  }
+}

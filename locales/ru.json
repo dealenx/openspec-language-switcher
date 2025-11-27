@@ -1,0 +1,7 @@
+{
+  "descriptionSuffix": " Provide the answer strictly in Russian language. Even if the query is in English, the output must be Russian.",
+  "checklistItems": [
+    "When creating files, use Russian",
+    "Ensure all files and tasks are in Russian"
+  ]
+}

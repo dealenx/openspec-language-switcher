@@ -1,6 +1,6 @@
 # OpenSpec Instructions
 
-Instructions for AI coding assistants using OpenSpec for spec-driven development. Provide the answer strictly in Russian language. Even if the query is in English, the output must be Russian.
+Instructions for AI coding assistants using OpenSpec for spec-driven development.
 
 ## TL;DR Quick Checklist
 
@@ -11,8 +11,6 @@ Instructions for AI coding assistants using OpenSpec for spec-driven development
 - Write deltas: use `## ADDED|MODIFIED|REMOVED|RENAMED Requirements`; include at least one `#### Scenario:` per requirement
 - Validate: `openspec validate [change-id] --strict` and fix issues
 - Request approval: Do not start implementation until proposal is approved
-- When creating files, use Russian
-- Ensure all files and tasks are in Russian
 
 ## Three-Stage Workflow
 
