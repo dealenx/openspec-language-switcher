@@ -19,11 +19,3 @@ npx @dealenx/openspec-language-switcher ru
 | :--- | :--- | :--- |
 | `ru` | Russian | `npx @dealenx/openspec-language-switcher ru` |
 | `zh` | Chinese | `npx @dealenx/openspec-language-switcher zh` |
-
-Or build and run locally:
-
-```bash
-npm install
-npm run build
-node dist/index.js zh
-```
