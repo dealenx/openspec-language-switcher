@@ -29,7 +29,7 @@ jobs:
 
       - name: Setup .npmrc
         run: |
-          echo "@mimikkai:registry=https://npm.pkg.github.com" > .npmrc
+          echo "@dealenx:registry=https://npm.pkg.github.com" > .npmrc
           echo "//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}" >> .npmrc
 
       - name: Publish to GitHub Packages
@@ -45,7 +45,8 @@ jobs:
       - name: Publish to NPM
         run: |
           npm pkg delete publishConfig
-          echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > .npmrc
+          echo "registry=https://registry.npmjs.org/" > .npmrc
+          echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" >> .npmrc
           if [[ "${{ github.ref_name }}" == *"-"* ]]; then
             npm publish --tag next --access public
           else
