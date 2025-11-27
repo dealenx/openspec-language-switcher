@@ -1,0 +1,21 @@
+# locale-management Specification
+
+## Purpose
+TBD - created by archiving change create-language-switcher-cli. Update Purpose after archive.
+## Requirements
+### Requirement: Поддержка нескольких языков
+Система MUST поддерживать хранение шаблонов для разных языков.
+
+#### Scenario: Выбор русского языка
+Given существуют шаблоны для `zh` и `ru`
+When пользователь запрашивает `ru`
+Then используется шаблон с русским текстом
+
+### Requirement: Обработка отсутствующего языка
+Система MUST сообщать об ошибке, если запрошенный язык не поддерживается.
+
+#### Scenario: Неизвестный язык
+Given поддерживается только `ru`
+When пользователь запрашивает `fr`
+Then выводится сообщение об ошибке "Language 'fr' not supported"
+

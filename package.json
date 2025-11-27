@@ -2,12 +2,17 @@
   "name": "@dealenx/openspec-language-switcher",
   "version": "0.0.1-0",
   "description": "CLI utility to localize OpenSpec AGENTS.md",
-  "main": "bin/index.js",
+  "main": "dist/index.js",
   "bin": {
-    "openspec-language-switcher": "./bin/index.js"
+    "openspec-language-switcher": "./dist/index.js"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dealenx/openspec-language-switcher.git"
   },
   "keywords": [
     "openspec",
@@ -15,8 +20,12 @@
     "localization"
   ],
   "author": "",
-  "license": "ISC",
   "dependencies": {
     "commander": "^11.0.0"
+  },
+  "devDependencies": {
+    "@types/commander": "^2.12.0",
+    "@types/node": "^24.10.1",
+    "typescript": "^5.9.3"
   }
 }

@@ -1,0 +1,39 @@
+version: "3"
+mise:
+  tools:
+    node: "22"
+    task: latest
+tasks:
+  default:
+    desc: Set up project and start processing documents
+    cmds:
+      - echo "🚀 Setting up mimdokk project..."
+      - task: install
+      - task: dev
+  install:
+    desc: Install project dependencies
+    cmds:
+      - mise trust
+      - mise install
+      - echo "📦 Installing Node.js dependencies..."
+      - npm install
+  dev:
+    desc: Run document processing in watch mode
+    cmds:
+      - echo "🚀 Starting document processor..."
+  build:
+    desc: Build the project
+    cmds:
+      - echo "🔨 Building project..."
+      - npm run build
+  clean:
+    desc: Clean generated output files
+    cmds:
+      - echo "🧹 Cleaning output files..."
+      - rm output*.docx
+      - echo "✅ Cleaned"
+  example:
+    desc: Run example from examples folder
+    cmds:
+      - echo "🚀 Running example..."
+      - node bin/mimdokk.ts fill examples/contact-info/example.docx
